@@ -6,7 +6,7 @@ __pycache__/
 downloaded_pages/
 
 # Ambiente
-.env
+.env*
 
 /output
 

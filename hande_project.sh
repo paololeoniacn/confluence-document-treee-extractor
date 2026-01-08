@@ -170,7 +170,7 @@ validate_env() {
     fi
 
     # Controllo che le chiavi non siano vuote
-    local required_vars=("CONFLUENCE_URL" "CONFLUENCE_USER" "CONFLUENCE_TOKEN" "PARENT_PAGE_ID")
+    local required_vars=("CONFLUENCE_URL" "SPACE_KEY" "CONFLUENCE_USER" "CONFLUENCE_TOKEN" "PARENT_PAGE_ID")
     for var in "${required_vars[@]}"; do
         if ! grep -q "^${var}=" "$ENV_FILE" || grep -q "^${var}=$" "$ENV_FILE"; then
             log_error "La variabile $var è mancante o vuota nel file $ENV_FILE"

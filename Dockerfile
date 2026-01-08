@@ -30,6 +30,7 @@ ENV CONFLUENCE_URL=""
 ENV CONFLUENCE_USER=""
 ENV CONFLUENCE_TOKEN=""
 ENV PARENT_PAGE_ID=""
+ENV SPACE_KEY=""
 
 # Cartella di output
 RUN mkdir -p /app/downloaded_pages
